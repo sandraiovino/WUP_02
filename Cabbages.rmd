@@ -1,7 +1,7 @@
 ---
 title: "Cabbages"
-author: "Put your name here!"
-date: "put the date here"
+author: " Sandra Iovino "
+date: "23 May 2024 "
 output:
   html_document:
     df_print: paged
@@ -22,9 +22,9 @@ veggy <- cabbages
  
 ### Is there a difference in average VitC between c39 and c52 cultivation methods?  
 
-%H_0$:   There is no difference in the average vitamin C content of cabbages based on cultivation method 
+$H_0$:   There is no difference in the average vitamin C content of cabbages based on cultivation method 
 
-$H_A%: There is a difference in the average Vitamin C context based on cultivation methods
+$H_A$: There is a difference in the average Vitamin C context based on cultivation methods
 
 # Methods
 
@@ -48,7 +48,7 @@ Numerical~categorical so we use the Numerical~Cat helper file
 ```{r}
 boxplot(VitC~Cult,data=veggy)
 ```
-The boxplot shows that cultivation methods c52 generally has more VitC than C39
+The box plot shows that cultivation methods c52 generally has more VitC than C39
 
 ### Numerical Descriptive Results
 
@@ -58,7 +58,7 @@ The boxplot shows that cultivation methods c52 generally has more VitC than C39
 favstats(VitC~Cult,data=veggy)
 ```
 
-The numerical summary shows that C52 has more Vitc than C39 
+The numerical summary shows that C52 has more Vitc than C39 for your cabbages.
 
 ## Inferential Results
 
@@ -73,3 +73,7 @@ P-value is so small that it will reject hypothesis
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+
+
+The original hypothesis stated there is no difference in the VitC between c39 and c52 cultivation methods.
+When using the Numerical~Cat we found that c52 has more VitC than C39 there for we rejected the hypothesis since the P-value came out to .00000003405<0.05.  
